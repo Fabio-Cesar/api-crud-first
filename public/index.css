@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    gap: 4vh;
+}
+
+body > header {
+    margin-top: 1vh;
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background-color: #14BC39;
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+main, #users-table-section {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2vh;
+}
+
+main > header, #users-table-section > header {
+    border-bottom: 2px solid #6CD683;
+    width: 90vw;
+}
+
+main > div {
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+}
+
+input {
+    border-style: solid;
+    border-color: #6CD683;
+    border-radius: 5px;
+    font-size: 100%;
+    padding-left: 18px;
+    width: 32vw;
+    height: 42px;
+}
+
+#add-user-btn {
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 0px 1px 1px 0.5px rgba(0, 0, 0, 0.2);
+    width: 16vw;
+    height: 42px;
+    background-color: #14BC39;
+    font-size: 100%;
+    color: #ffffff;
+}
+
+#add-user:hover {
+    background-color: #24ce49;
+    cursor: pointer;
+}
+
+#status-message {
+    color: #f02020;
+}
+
+table {
+    width: 90vw;
+}
+
+th:nth-child(1) {
+    width: 8vw;
+}
+
+th:nth-child(2) {
+    width: 33vw;
+}
+
+th:nth-child(3) {
+    width: 33vw;
+}
+
+th:nth-child(4) {
+    width: 8vw;
+}
+
+th:nth-child(5) {
+    width: 8vw;
+}
+
+th, td {
+    text-align: center;
+}
+
+th {
+    background-color: #14BC39;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+tr {
+    height: 6vh;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #BDE3C6;
+}

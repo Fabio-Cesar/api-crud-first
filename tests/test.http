@@ -1,0 +1,28 @@
+@baseURL = {{$dotenv BASEURL}}
+
+GET {{baseURL}}/usuarios HTTP/1.1
+###
+
+GET {{baseURL}}/usuarios/1 HTTP/1.1
+###
+
+POST {{baseURL}}/usuarios HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Fabio Cesar",
+    "email": "fabiocesar_33@outlook.com"
+}
+###
+
+PUT {{baseURL}}/usuarios/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Fabio Melo",
+    "email": "fabio33joy@gmail.com"
+}
+###
+
+DELETE {{baseURL}}/usuarios/1 HTTP/1.1
+###
